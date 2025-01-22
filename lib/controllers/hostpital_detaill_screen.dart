@@ -137,7 +137,6 @@ class HospitalDetailsController extends GetxController {
 
       if (response.statusCode == 201) {
         var data = response.data;
-
         String access_key = data?["data"]?["accessKey"];
 
         return access_key;

@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:dio/io.dart';
+import 'package:get/get.dart';
+import 'package:hospital_app/views/login.dart';
 
 class DioClient {
   // Singleton instance
@@ -39,6 +41,12 @@ class DioClient {
           return handler.next(response); // Continue
         },
         onError: (DioError error, handler) {
+          if (error.response?.statusCode == 401) {
+            print("Reachd erher");
+            // Navigate to login screen on 401
+            Get.snackbar("Unauthorized", "Please login to proceed");
+            Get.to(LoginScreen());
+          }
           debugPrint(
               "ERROR [${error.response?.statusCode}] => PATH: ${error.requestOptions.path}");
           debugPrint("Error Data: ${error.response?.data}");

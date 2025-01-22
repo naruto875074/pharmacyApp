@@ -183,12 +183,12 @@ class HeroComponentState extends State<HeroComponent> {
               ),
               SizedBox(height: 20),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
                   color: AppColors.searchBarBackground,
                   borderRadius: BorderRadius.circular(16),
                 ),
-                height: 58.5,
+                // height: 58.5,
                 child: TextField(
                   onTap: () => _openSearchDialog(context),
                   decoration: InputDecoration(

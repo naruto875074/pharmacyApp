@@ -55,12 +55,12 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(height: 4),
+            const SizedBox(height: 4),
             Obx(() {
               return Text(
                 "You have ${controller.appointmentList.length} appointments",
                 style: GoogleFonts.poppins(
-                  color: Color.fromRGBO(0, 0, 0, 0.6),
+                  color: const Color.fromRGBO(0, 0, 0, 0.6),
                   fontSize: 14,
                   fontWeight: FontWeight.w400,
                 ),
@@ -78,17 +78,17 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Obx(() {
                 if (controller.isLoading.value) {
-                  return Center(
+                  return const Center(
                     child: CircularProgressIndicator(
                       color: AppColors.primary,
                     ),
                   );
                 }
                 return Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   width: double.infinity,
                   color: Colors.white,
                   child: ListView.separated(

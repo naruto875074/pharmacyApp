@@ -83,11 +83,11 @@ class _PaymentsScreenState extends State<PaymentsScreen> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Obx(() {
                     if (controller.isLoading.value) {
                       print("Loading Payments...");
-                      return Center(
+                      return const Center(
                         child: CircularProgressIndicator(
                           color: AppColors.primary,
                         ),

@@ -42,7 +42,9 @@ dependencies:
   get_storage: ^2.1.1
   cached_network_image: ^3.4.1
   flutter_svg: ^2.0.16
-  path_provider_android: ^2.1.1
+  easebuzz_flutter: ^0.0.1
+  # easebuzz_flutter_sdk: ^1.0.1
+  # path_provider_android: ^2.1.1
 
 dev_dependencies:
   flutter_test:

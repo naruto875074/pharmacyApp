@@ -53,11 +53,14 @@ class HospitalCard extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 4),
-              Text(
-                hospital.address,
-                style: GoogleFonts.poppins(
-                  fontSize: 16,
-                  color: Color.fromRGBO(0, 0, 0, 0.6),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  hospital.address,
+                  style: GoogleFonts.poppins(
+                    fontSize: 16,
+                    color: Color.fromRGBO(0, 0, 0, 0.6),
+                  ),
                 ),
               ),
               SizedBox(height: 8),

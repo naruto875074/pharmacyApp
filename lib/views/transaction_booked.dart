@@ -13,7 +13,20 @@ import './bottom_navigation_bar.dart';
 import '../utils/routes.dart';
 
 class TranscationScreen extends StatefulWidget {
-  const TranscationScreen({super.key});
+  final String firstName;
+  final String doctorName;
+  final String hospitalName;
+  final String dateOfBooking;
+  final String opdNo;
+  final String amount;
+  const TranscationScreen(
+      {super.key,
+      required this.firstName,
+      required this.doctorName,
+      required this.hospitalName,
+      required this.dateOfBooking,
+      required this.opdNo,
+      required this.amount});
 
   @override
   State<TranscationScreen> createState() => _TranscationScreenState();
@@ -98,7 +111,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500)),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
@@ -125,7 +138,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500)),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
@@ -138,7 +151,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
@@ -152,7 +165,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500)),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
@@ -165,7 +178,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
@@ -179,7 +192,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500)),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
@@ -192,7 +205,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
@@ -206,7 +219,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500)),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
@@ -219,7 +232,7 @@ class _TranscationScreenState extends State<TranscationScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Row(
